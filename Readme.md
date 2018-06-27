@@ -10,4 +10,4 @@ The Buble Sort that I implemented here has a time complexity of O(n^2). It has a
 
 POSTMAN DOCS
 
-[API DOCS](https://documenter.getpostman.com/collection/view/783163-d8125947-f149-3ab3-8ad6-72e49ac4a03e)
+[API DOCS](https://documenter.getpostman.com/view/783163/sortingalgorithms/RWEmHbfs)
