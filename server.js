@@ -1,6 +1,6 @@
 import express from 'express'
 import bodyParser from 'body-parser'
-
+import routes from './routes/main.routes';
 
 const app = express()
 app.use(bodyParser.urlencoded({
@@ -16,16 +16,8 @@ app.use((req, res, next) => {
 });
 //
 
-// just to check if its working
-app.get('/', (req, res) => res.send({'Hello': 'Worlds'}))
-
-app.post('/merge', (req, res) => {
-    let unsorted = req.body.unsorted;
-    
-    res.send({
-        sorted: req.body.data
-    })
-})
+// routes
+app.use('/', routes)
 
 // initial server
 const PORT = process.env.PORT || 3000
